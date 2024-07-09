@@ -1,0 +1,23 @@
+{
+  "name": "highproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx playwright install",
+    "env:test": "cross-env test_env=test npx playwright test",
+    "env:prod": "cross-env test_env=prod npx playwright test",
+    "env:staging": "cross-env test_env=staging npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
