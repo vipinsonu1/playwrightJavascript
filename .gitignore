@@ -3,10 +3,13 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+logs/
 .vscode/*
 # package-lock.json
 .DS_Store
 build*
 public/minified/*
 node_modules/*
+logs/*
 yarn.lock
+test-result.js
