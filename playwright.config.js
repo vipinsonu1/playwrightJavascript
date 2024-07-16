@@ -1,5 +1,6 @@
 // @ts-check
 const { defineConfig, devices } = require("@playwright/test");
+const { allure, default: AllureReporter } = require("allure-playwright");
 
 /**
  * Read environment variables from file.
@@ -24,14 +25,11 @@ module.exports = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'html',
   reporter: [
-    ["dot"], // -> console
+    ["dot"],
+    ["list"], // -> console
     ["json", { outputFile: "test-result.json" }], //  -> JSON
-    [
-      "html",
-      {
-        open: "always",
-      },
-    ],
+    ["html", { open:"on-failure" }],
+    ["allure-playwright", { outputFolder: "allure-results" }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -40,6 +38,8 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
+    screenshot:"only-on-failure",
+    video:"retain-on-failure"
   },
   globalSetup: "utils/globalSetup.js",
   /* Configure projects for major browsers */

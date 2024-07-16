@@ -20,6 +20,10 @@
         null
       ],
       [
+        "list",
+        null
+      ],
+      [
         "json",
         {
           "outputFile": "test-result.json"
@@ -28,7 +32,13 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "on-failure"
+        }
+      ],
+      [
+        "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\node_modules\\allure-playwright\\dist\\index.js",
+        {
+          "outputFolder": "allure-results"
         }
       ]
     ],
@@ -55,7 +65,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.45.1",
+    "version": "1.45.2",
     "workers": 9,
     "webServer": null
   },
@@ -68,7 +78,7 @@
       "specs": [
         {
           "title": "has title",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -80,8 +90,112 @@
               "results": [
                 {
                   "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 325,
+                  "error": {
+                    "message": "Error: page.goto: url: expected string, got undefined",
+                    "stack": "Error: page.goto: url: expected string, got undefined\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:8:14",
+                    "location": {
+                      "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                      "column": 14,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Url coming from env file : \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Username coming from env file name:  \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                        "column": 14,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: url: expected string, got undefined\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Url coming from env file : \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Username coming from env file name:  \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:8:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "api [info]: => browser.newContext started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browser.newContext succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => browserContext.newPage started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browserContext.newPage succeeded\n"
+                    },
+                    {
+                      "text": "Url coming from env file :  \u001b[90mundefined\u001b[39m\n"
+                    },
+                    {
+                      "text": "Username coming from env file name:   vipin\n"
+                    },
+                    {
+                      "text": "api [info]: => page.goto started\n"
+                    },
+                    {
+                      "text": "api [info]: <= page.goto failed\n"
+                    },
+                    {
+                      "text": "api [info]: => page.screenshot started\n"
+                    },
+                    {
+                      "text": "api [info]: <= page.screenshot succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => video.saveAs started\n"
+                    },
+                    {
+                      "text": "api [info]: <= video.saveAs succeeded\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-16T13:52:02.514Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\test-results\\example-has-title-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\test-results\\example-has-title-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                    "column": 14,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
+          "file": "example.spec.js",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 8609,
+                  "duration": 1013,
                   "errors": [],
                   "stdout": [
                     {
@@ -97,106 +211,31 @@
                       "text": "api [info]: <= browserContext.newPage succeeded\n"
                     },
                     {
-                      "text": "Url coming from env file :  https://playwright.dev/\n"
-                    },
-                    {
-                      "text": "Username coming from env file name:   VIPINProd\n"
-                    },
-                    {
                       "text": "api [info]: => page.goto started\n"
                     },
                     {
                       "text": "api [info]: <= page.goto succeeded\n"
                     },
                     {
-                      "text": "api [info]: => expect.toHaveTitle started\n"
+                      "text": "api [info]: => locator.click started\n"
                     },
                     {
-                      "text": "api [info]: <= expect.toHaveTitle succeeded\n"
+                      "text": "api [info]: <= locator.click succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => expect.toBeVisible started\n"
+                    },
+                    {
+                      "text": "api [info]: <= expect.toBeVisible succeeded\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-16T09:38:02.152Z",
+                  "startTime": "2024-07-16T13:52:02.548Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
-          "file": "example.spec.js",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 7733,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:14:14",
-                    "location": {
-                      "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                      "column": 14,
-                      "line": 14
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://playwright.dev/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[90m// Click the get started link.\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Get started\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                        "column": 14,
-                        "line": 14
-                      },
-                      "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://playwright.dev/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[90m// Click the get started link.\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Get started\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:14:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "api [info]: => browser.newContext started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browser.newContext succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => browserContext.newPage started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browserContext.newPage succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => page.goto started\n"
-                    },
-                    {
-                      "text": "api [info]: <= page.goto failed\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-07-16T09:38:02.150Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                    "column": 14,
-                    "line": 14
-                  }
-                }
-              ],
-              "status": "unexpected"
             }
           ],
           "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
@@ -227,7 +266,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 8854,
+                  "duration": 1227,
                   "errors": [],
                   "stdout": [
                     {
@@ -254,7 +293,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-16T09:38:02.207Z",
+                  "startTime": "2024-07-16T13:52:02.557Z",
                   "attachments": []
                 }
               ],
@@ -271,8 +310,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-16T09:38:00.150Z",
-    "duration": 11358.748,
+    "startTime": "2024-07-16T13:52:01.605Z",
+    "duration": 2465.619,
     "expected": 2,
     "skipped": 0,
     "unexpected": 1,

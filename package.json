@@ -4,9 +4,14 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "npx playwright install",
+    "test": "npx playwright test",
     "env:test": "cross-env test_env=test npx playwright test",
     "env:prod": "cross-env test_env=prod npx playwright test",
-    "env:staging": "cross-env test_env=staging npx playwright test"
+    "env:staging": "cross-env test_env=staging npx playwright test",
+    "testqq":"allure generate my-allure-results -o allure-report --clean",
+    "open_report": "allure open allure-report",
+    "sg": "utils\\allure.bat",
+    "allure":"(npx playwright test --reporter=allure-playwright) &&  (node -e \"setTimeout(() => {}, 5000)\") && (npx allure generate allure-results -o allure-report --clean) &&  (node -e \"setTimeout(() => {}, 5000)\" ) && (npx allure open allure-report)"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +20,11 @@
   "devDependencies": {
     "@playwright/test": "^1.45.1",
     "@types/node": "^20.14.10",
+    "allure-commandline": "^2.29.0",
     "cross-env": "^7.0.3"
   },
   "dependencies": {
+    "allure-playwright": "^2.15.1",
     "dotenv": "^16.4.5",
     "winston": "^3.13.1"
   }
