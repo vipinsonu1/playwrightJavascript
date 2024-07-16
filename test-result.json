@@ -81,7 +81,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8227,
+                  "duration": 8609,
                   "errors": [],
                   "stdout": [
                     {
@@ -117,7 +117,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-16T09:26:07.879Z",
+                  "startTime": "2024-07-16T09:38:02.152Z",
                   "attachments": []
                 }
               ],
@@ -131,7 +131,7 @@
         },
         {
           "title": "get started link",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -143,9 +143,28 @@
               "results": [
                 {
                   "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 8567,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 7733,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:14:14",
+                    "location": {
+                      "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                      "column": 14,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://playwright.dev/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[90m// Click the get started link.\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Get started\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                        "column": 14,
+                        "line": 14
+                      },
+                      "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://playwright.dev/\nCall log:\n  \u001b[2m- navigating to \"https://playwright.dev/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://playwright.dev/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[90m// Click the get started link.\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Get started\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:14:14\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
                       "text": "api [info]: => browser.newContext started\n"
@@ -163,28 +182,21 @@
                       "text": "api [info]: => page.goto started\n"
                     },
                     {
-                      "text": "api [info]: <= page.goto succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => locator.click started\n"
-                    },
-                    {
-                      "text": "api [info]: <= locator.click succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => expect.toBeVisible started\n"
-                    },
-                    {
-                      "text": "api [info]: <= expect.toBeVisible succeeded\n"
+                      "text": "api [info]: <= page.goto failed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-16T09:26:07.878Z",
-                  "attachments": []
+                  "startTime": "2024-07-16T09:38:02.150Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
+                    "column": 14,
+                    "line": 14
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
@@ -215,7 +227,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 8542,
+                  "duration": 8854,
                   "errors": [],
                   "stdout": [
                     {
@@ -242,7 +254,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-16T09:26:07.933Z",
+                  "startTime": "2024-07-16T09:38:02.207Z",
                   "attachments": []
                 }
               ],
@@ -259,11 +271,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-16T09:26:05.799Z",
-    "duration": 11166.667,
-    "expected": 3,
+    "startTime": "2024-07-16T09:38:00.150Z",
+    "duration": 11358.748,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -13,3 +13,5 @@ node_modules/*
 logs/*
 yarn.lock
 test-result.js
+test-result.json
+logs/error.log
