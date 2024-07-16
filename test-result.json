@@ -1,0 +1,269 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\playwright.config.js",
+    "rootDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\utils\\globalSetup.js",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.1",
+    "workers": 9,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.js",
+      "file": "example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1217,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "api [info]: => browser.newContext started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browser.newContext succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => browserContext.newPage started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browserContext.newPage succeeded\n"
+                    },
+                    {
+                      "text": "Url coming from env file :  https://playwright.dev/\n"
+                    },
+                    {
+                      "text": "Username coming from env file name:   VIPINProd\n"
+                    },
+                    {
+                      "text": "api [info]: => page.goto started\n"
+                    },
+                    {
+                      "text": "api [info]: <= page.goto succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => expect.toHaveTitle started\n"
+                    },
+                    {
+                      "text": "api [info]: <= expect.toHaveTitle succeeded\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T09:02:22.012Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
+          "file": "example.spec.js",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 1824,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "api [info]: => browser.newContext started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browser.newContext succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => browserContext.newPage started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browserContext.newPage succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => page.goto started\n"
+                    },
+                    {
+                      "text": "api [info]: <= page.goto succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => locator.click started\n"
+                    },
+                    {
+                      "text": "api [info]: <= locator.click succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => expect.toBeVisible started\n"
+                    },
+                    {
+                      "text": "api [info]: <= expect.toBeVisible succeeded\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T09:02:22.075Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
+          "file": "example.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "file.spec.js",
+      "file": "file.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "this checking the logger",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1691,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "api [info]: => browser.newContext started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browser.newContext succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => browserContext.newPage started\n"
+                    },
+                    {
+                      "text": "api [info]: <= browserContext.newPage succeeded\n"
+                    },
+                    {
+                      "text": "api [info]: => page.goto started\n"
+                    },
+                    {
+                      "text": "api [info]: <= page.goto succeeded\n"
+                    },
+                    {
+                      "text": "debug: this debug message\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T09:02:22.203Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "91046087548b6a68cc14-36ae76bd365892488bf9",
+          "file": "file.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-12T09:02:20.661Z",
+    "duration": 3699.384,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
