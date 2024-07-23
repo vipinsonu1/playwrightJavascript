@@ -42,6 +42,7 @@ module.exports = defineConfig({
     video:"retain-on-failure"
   },
   globalSetup: "utils/globalSetup.js",
+  globalTeardown: 'utils/global-teardown.js',
   /* Configure projects for major browsers */
   projects: [
     {

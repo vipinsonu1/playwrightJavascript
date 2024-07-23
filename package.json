@@ -8,24 +8,28 @@
     "env:test": "cross-env test_env=test npx playwright test",
     "env:prod": "cross-env test_env=prod npx playwright test",
     "env:staging": "cross-env test_env=staging npx playwright test",
-    "testqq":"allure generate my-allure-results -o allure-report --clean",
+    "testqq": "allure generate my-allure-results -o allure-report --clean",
     "open_report": "allure open allure-report",
+    "clean:allurelinux": "rm -rf allure-results",
+    "clean:allurewin": "del /f /q allure-results\\* && /s /q allure-results",
     "sg": "utils\\allure.bat",
-    "allure":"(npx playwright test --reporter=allure-playwright) &&  (node -e \"setTimeout(() => {}, 5000)\") && (npx allure generate allure-results -o allure-report --clean) &&  (node -e \"setTimeout(() => {}, 5000)\" ) && (npx allure open allure-report)"
+    "allure": "(npm run clean:allurewin) && (npx playwright test --reporter=allure-playwright) && (npx allure generate allure-results -o allure-report --clean) && (npx allure open allure-report)"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.45.1",
+    "@playwright/test": "1.45.0",
     "@types/node": "^20.14.10",
     "allure-commandline": "^2.29.0",
     "cross-env": "^7.0.3"
   },
   "dependencies": {
-    "allure-playwright": "^2.15.1",
-    "dotenv": "^16.4.5",
-    "winston": "^3.13.1"
+    "allure-playwright": "2.15.1",
+    "dotenv": "16.4.5",
+    "playwright": "1.45.0",
+    "winston": "3.13.1",
+    "xlsx": "^0.18.5"
   }
 }

@@ -5,13 +5,13 @@
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\utils\\globalSetup.js",
-    "globalTeardown": null,
+    "globalTeardown": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\utils\\global-teardown.js",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 0,
+    "maxFailures": 1,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -60,261 +60,274 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.45.2",
-    "workers": 9,
+    "version": "1.45.0",
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
+      "title": "readingJSData.spec.js",
+      "file": "readingJSData.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "has title",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 325,
-                  "error": {
-                    "message": "Error: page.goto: url: expected string, got undefined",
-                    "stack": "Error: page.goto: url: expected string, got undefined\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:8:14",
-                    "location": {
-                      "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                      "column": 14,
-                      "line": 8
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Url coming from env file : \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Username coming from env file name:  \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                        "column": 14,
-                        "line": 8
-                      },
-                      "message": "Error: page.goto: url: expected string, got undefined\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Url coming from env file : \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m\"Username coming from env file name:  \"\u001b[39m\u001b[33m,\u001b[39m \u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mENV\u001b[39m\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js:8:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "api [info]: => browser.newContext started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browser.newContext succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => browserContext.newPage started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browserContext.newPage succeeded\n"
-                    },
-                    {
-                      "text": "Url coming from env file :  \u001b[90mundefined\u001b[39m\n"
-                    },
-                    {
-                      "text": "Username coming from env file name:   vipin\n"
-                    },
-                    {
-                      "text": "api [info]: => page.goto started\n"
-                    },
-                    {
-                      "text": "api [info]: <= page.goto failed\n"
-                    },
-                    {
-                      "text": "api [info]: => page.screenshot started\n"
-                    },
-                    {
-                      "text": "api [info]: <= page.screenshot succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => video.saveAs started\n"
-                    },
-                    {
-                      "text": "api [info]: <= video.saveAs succeeded\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-07-16T13:52:02.514Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\test-results\\example-has-title-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\test-results\\example-has-title-chromium\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\example.spec.js",
-                    "column": 14,
-                    "line": 8
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
-          "file": "example.spec.js",
+          "title": "Searching banking data",
+          "file": "readingJSData.spec.js",
           "line": 5,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Search American express",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 1013,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "text": "api [info]: => browser.newContext started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browser.newContext succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => browserContext.newPage started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browserContext.newPage succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => page.goto started\n"
-                    },
-                    {
-                      "text": "api [info]: <= page.goto succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => locator.click started\n"
-                    },
-                    {
-                      "text": "api [info]: <= locator.click succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => expect.toBeVisible started\n"
-                    },
-                    {
-                      "text": "api [info]: <= expect.toBeVisible succeeded\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8677,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "api [info]: => browser.newPage started\n"
+                        },
+                        {
+                          "text": "api [info]: <= browser.newPage succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.goto started\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.click started\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.click succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.fill started\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.fill succeeded\n"
+                        },
+                        {
+                          "text": "American express\n"
+                        },
+                        {
+                          "text": "USA\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-23T09:58:07.955Z",
+                      "attachments": []
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-07-16T13:52:02.548Z",
-                  "attachments": []
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
-          "file": "example.spec.js",
-          "line": 13,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "file.spec.js",
-      "file": "file.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "this checking the logger",
-          "ok": true,
-          "tags": [],
-          "tests": [
+              "id": "057d29c6d5b2c7166526-836a255a2710afd7faec",
+              "file": "readingJSData.spec.js",
+              "line": 12,
+              "column": 9
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Search SBI",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 1227,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "text": "api [info]: => browser.newContext started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browser.newContext succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => browserContext.newPage started\n"
-                    },
-                    {
-                      "text": "api [info]: <= browserContext.newPage succeeded\n"
-                    },
-                    {
-                      "text": "api [info]: => page.goto started\n"
-                    },
-                    {
-                      "text": "api [info]: <= page.goto succeeded\n"
-                    },
-                    {
-                      "text": "debug: this debug message\r\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 112445,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "api [info]: => browser.newPage started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.goto succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: <= browser.newPage succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.goto started\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.click started\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.click succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.fill started\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.fill succeeded\n"
+                        },
+                        {
+                          "text": "SBI\n"
+                        },
+                        {
+                          "text": "Mumbai\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-23T09:58:17.436Z",
+                      "attachments": []
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-07-16T13:52:02.557Z",
-                  "attachments": []
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "057d29c6d5b2c7166526-6a9095c4ca77b9465cc9",
+              "file": "readingJSData.spec.js",
+              "line": 12,
+              "column": 9
+            },
+            {
+              "title": "Search HDFC",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8925,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "api [info]: => browser.newPage started\n"
+                        },
+                        {
+                          "text": "api [info]: <= browser.newPage succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.goto started\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.click started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.goto succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.click succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => locator.fill started\n"
+                        },
+                        {
+                          "text": "api [info]: <= locator.fill succeeded\n"
+                        },
+                        {
+                          "text": "HDFC\n"
+                        },
+                        {
+                          "text": "bangalore\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        },
+                        {
+                          "text": "api [info]: => page.waitForTimeout started\n"
+                        },
+                        {
+                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-07-23T10:00:09.920Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "057d29c6d5b2c7166526-2b93f24e0fbcdbd33937",
+              "file": "readingJSData.spec.js",
+              "line": 12,
+              "column": 9
             }
-          ],
-          "id": "91046087548b6a68cc14-36ae76bd365892488bf9",
-          "file": "file.spec.js",
-          "line": 4,
-          "column": 5
+          ]
         }
       ]
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.google.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[31mFailed worker ran 3 tests:\u001b[39m\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search American express\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search SBI\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search HDFC",
+      "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.google.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[31mFailed worker ran 3 tests:\u001b[39m\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search American express\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search SBI\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search HDFC\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\readingJSData.spec.js:9:10",
+      "location": {
+        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\readingJSData.spec.js",
+        "column": 10,
+        "line": 9
+      },
+      "snippet": "\u001b[90m   at \u001b[39mreadingJSData.spec.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m  8 |\u001b[39m     page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   searchData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m     test(\u001b[32m`Search ${data.bank}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+    }
+  ],
   "stats": {
-    "startTime": "2024-07-16T13:52:01.605Z",
-    "duration": 2465.619,
-    "expected": 2,
+    "startTime": "2024-07-23T09:58:06.701Z",
+    "duration": 133506.869,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
