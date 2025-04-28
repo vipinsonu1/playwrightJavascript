@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const readExcel = require('../utils/dataDriven/readExcel.js');
-const testData = readExcel('C:/Users/vipin/OneDrive/Documents/projects/highproject/data/excelData.xlsx', 'Sheet1');
+const testData = readExcel('C:/Users/vipin/Downloads/datavip/projects/highproject/data/excelData.xlsx', 'Sheet1');
 
 test.describe('Excel Data Driven Tests', () => {
   testData.forEach((data, index) => {

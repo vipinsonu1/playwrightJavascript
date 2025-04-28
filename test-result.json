@@ -1,15 +1,15 @@
 {
   "config": {
-    "configFile": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\playwright.config.js",
-    "rootDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/tests",
+    "configFile": "C:\\Users\\vipin\\Downloads\\datavip\\projects\\highproject\\playwright.config.js",
+    "rootDir": "C:/Users/vipin/Downloads/datavip/projects/highproject/tests",
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\utils\\globalSetup.js",
-    "globalTeardown": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\utils\\global-teardown.js",
+    "globalSetup": "C:\\Users\\vipin\\Downloads\\datavip\\projects\\highproject\\utils\\globalSetup.js",
+    "globalTeardown": "C:\\Users\\vipin\\Downloads\\datavip\\projects\\highproject\\utils\\global-teardown.js",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 1,
+    "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1
     },
@@ -36,7 +36,7 @@
         }
       ],
       [
-        "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\node_modules\\allure-playwright\\dist\\index.js",
+        "C:\\Users\\vipin\\Downloads\\datavip\\projects\\highproject\\node_modules\\allure-playwright\\dist\\index.js",
         {
           "outputFolder": "allure-results"
         }
@@ -49,283 +49,77 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/test-results",
+        "outputDir": "C:/Users/vipin/Downloads/datavip/projects/highproject/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/vipin/OneDrive/Documents/projects/highproject/tests",
+        "testDir": "C:/Users/vipin/Downloads/datavip/projects/highproject/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.45.0",
-    "workers": 1,
+    "workers": 9,
     "webServer": null
   },
   "suites": [
     {
-      "title": "readingJSData.spec.js",
-      "file": "readingJSData.spec.js",
+      "title": "interview\\table.spec.js",
+      "file": "interview/table.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Searching banking data",
-          "file": "readingJSData.spec.js",
-          "line": 5,
-          "column": 6,
-          "specs": [
+          "title": "api practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Search American express",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1462,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 8677,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "api [info]: => browser.newPage started\n"
-                        },
-                        {
-                          "text": "api [info]: <= browser.newPage succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.goto started\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.click started\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.click succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.fill started\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.fill succeeded\n"
-                        },
-                        {
-                          "text": "American express\n"
-                        },
-                        {
-                          "text": "USA\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-07-23T09:58:07.955Z",
-                      "attachments": []
+                      "text": "{\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'leader'\u001b[39m,\n  id: \u001b[32m'234'\u001b[39m,\n  createdAt: \u001b[32m'2025-02-16T07:58:39.552Z'\u001b[39m\n}\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-02-16T07:58:36.164Z",
+                  "attachments": []
                 }
               ],
-              "id": "057d29c6d5b2c7166526-836a255a2710afd7faec",
-              "file": "readingJSData.spec.js",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "Search SBI",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 112445,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "api [info]: => browser.newPage started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.goto succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: <= browser.newPage succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.goto started\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.click started\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.click succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.fill started\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.fill succeeded\n"
-                        },
-                        {
-                          "text": "SBI\n"
-                        },
-                        {
-                          "text": "Mumbai\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-07-23T09:58:17.436Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "057d29c6d5b2c7166526-6a9095c4ca77b9465cc9",
-              "file": "readingJSData.spec.js",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "Search HDFC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 8925,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "api [info]: => browser.newPage started\n"
-                        },
-                        {
-                          "text": "api [info]: <= browser.newPage succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.goto started\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.click started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.goto succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.click succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => locator.fill started\n"
-                        },
-                        {
-                          "text": "api [info]: <= locator.fill succeeded\n"
-                        },
-                        {
-                          "text": "HDFC\n"
-                        },
-                        {
-                          "text": "bangalore\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        },
-                        {
-                          "text": "api [info]: => page.waitForTimeout started\n"
-                        },
-                        {
-                          "text": "api [info]: <= page.waitForTimeout succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-07-23T10:00:09.920Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "057d29c6d5b2c7166526-2b93f24e0fbcdbd33937",
-              "file": "readingJSData.spec.js",
-              "line": 12,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "3f5a1a121163ef28f9fd-980477b4316c1e993b1d",
+          "file": "interview/table.spec.js",
+          "line": 30,
+          "column": 5
         }
       ]
     }
   ],
-  "errors": [
-    {
-      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.google.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[31mFailed worker ran 3 tests:\u001b[39m\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search American express\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search SBI\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search HDFC",
-      "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://www.google.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[31mFailed worker ran 3 tests:\u001b[39m\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search American express\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search SBI\n[chromium] › tests\\readingJSData.spec.js:12:9 › Searching banking data › Search HDFC\n    at C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\readingJSData.spec.js:9:10",
-      "location": {
-        "file": "C:\\Users\\vipin\\OneDrive\\Documents\\projects\\highproject\\tests\\readingJSData.spec.js",
-        "column": 10,
-        "line": 9
-      },
-      "snippet": "\u001b[90m   at \u001b[39mreadingJSData.spec.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ browser }) \u001b[33m=>\u001b[39m {\n \u001b[90m  8 |\u001b[39m     page \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   searchData\u001b[33m.\u001b[39mforEach((data) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m     test(\u001b[32m`Search ${data.bank}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
-    }
-  ],
+  "errors": [],
   "stats": {
-    "startTime": "2024-07-23T09:58:06.701Z",
-    "duration": 133506.869,
-    "expected": 3,
+    "startTime": "2025-02-16T07:58:35.114Z",
+    "duration": 2576.594,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
