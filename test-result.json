@@ -71,13 +71,13 @@
   },
   "suites": [
     {
-      "title": "interview\\table.spec.js",
-      "file": "interview/table.spec.js",
+      "title": "apiautomation\\apitest.spec.js",
+      "file": "apiautomation/apitest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "api practice",
+          "title": "testin api",
           "ok": true,
           "tags": [],
           "tests": [
@@ -91,34 +91,40 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1462,
+                  "duration": 1809,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "{\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'leader'\u001b[39m,\n  id: \u001b[32m'234'\u001b[39m,\n  createdAt: \u001b[32m'2025-02-16T07:58:39.552Z'\u001b[39m\n}\n"
+                      "text": "Actual response saved to test-data/actual/userActual.json {\n  message: {\n    affenpinscher: [],\n    african: [],\n    airedale: [],\n    akita: [],\n    appenzeller: [],\n    australian: [ \u001b[32m'kelpie'\u001b[39m, \u001b[32m'shepherd'\u001b[39m ],\n    bakharwal: [ \u001b[32m'indian'\u001b[39m ],\n    basenji: [],\n    beagle: [],\n    bluetick: [],\n    borzoi: [],\n    bouvier: [],\n    boxer: [],\n    brabancon: [],\n    briard: [],\n    buhund: [ \u001b[32m'norwegian'\u001b[39m ],\n    bulldog: [ \u001b[32m'boston'\u001b[39m, \u001b[32m'english'\u001b[39m, \u001b[32m'french'\u001b[39m ],\n    bullterrier: [ \u001b[32m'staffordshire'\u001b[39m ],\n    cattledog: [ \u001b[32m'australian'\u001b[39m ],\n    cavapoo: [],\n    chihuahua: [],\n    chippiparai: [ \u001b[32m'indian'\u001b[39m ],\n    chow: [],\n    clumber: [],\n    cockapoo: [],\n    collie: [ \u001b[32m'border'\u001b[39m ],\n    coonhound: [],\n    corgi: [ \u001b[32m'cardigan'\u001b[39m ],\n    cotondetulear: [],\n    dachshund: [],\n    dalmatian: [],\n    dane: [ \u001b[32m'great'\u001b[39m ],\n    danish: [ \u001b[32m'swedish'\u001b[39m ],\n    deerhound: [ \u001b[32m'scottish'\u001b[39m ],\n    dhole: [],\n    dingo: [],\n    doberman: [],\n    elkhound: [ \u001b[32m'norwegian'\u001b[39m ],\n    entlebucher: [],\n    eskimo: [],\n    finnish: [ \u001b[32m'lapphund'\u001b[39m ],\n    frise: [ \u001b[32m'bichon'\u001b[39m ],\n    gaddi: [ \u001b[32m'indian'\u001b[39m ],\n    germanshepherd: [],\n    greyhound: [ \u001b[32m'indian'\u001b[39m, \u001b[32m'italian'\u001b[39m ],\n    groenendael: [],\n    havanese: [],\n    hound: [\n      \u001b[32m'afghan'\u001b[39m, \u001b[32m'basset'\u001b[39m,\n      \u001b[32m'blood'\u001b[39m,  \u001b[32m'english'\u001b[39m,\n      \u001b[32m'ibizan'\u001b[39m, \u001b[32m'plott'\u001b[39m,\n      \u001b[32m'walker'\u001b[39m\n    ],\n    husky: [],\n    keeshond: [],\n    kelpie: [],\n    kombai: [],\n    komondor: [],\n    kuvasz: [],\n    labradoodle: [],\n    labrador: [],\n    leonberg: [],\n    lhasa: [],\n    malamute: [],\n    malinois: [],\n    maltese: [],\n    mastiff: [ \u001b[32m'bull'\u001b[39m, \u001b[32m'english'\u001b[39m, \u001b[32m'indian'\u001b[39m, \u001b[32m'tibetan'\u001b[39m ],\n    mexicanhairless: [],\n    mix: [],\n    mountain: [ \u001b[32m'bernese'\u001b[39m, \u001b[32m'swiss'\u001b[39m ],\n    mudhol: [ \u001b[32m'indian'\u001b[39m ],\n    newfoundland: [],\n    otterhound: [],\n    ovcharka: [ \u001b[32m'caucasian'\u001b[39m ],\n    papillon: [],\n    pariah: [ \u001b[32m'indian'\u001b[39m ],\n    pekinese: [],\n    pembroke: [],\n    pinscher: [ \u001b[32m'miniature'\u001b[39m ],\n    pitbull: [],\n    pointer: [ \u001b[32m'german'\u001b[39m, \u001b[32m'germanlonghair'\u001b[39m ],\n    pomeranian: [],\n    poodle: [ \u001b[32m'medium'\u001b[39m, \u001b[32m'miniature'\u001b[39m, \u001b[32m'standard'\u001b[39m, \u001b[32m'toy'\u001b[39m ],\n    pug: [],\n    puggle: [],\n    pyrenees: [],\n    rajapalayam: [ \u001b[32m'indian'\u001b[39m ],\n    redbone: [],\n    retriever: [ \u001b[32m'chesapeake'\u001b[39m, \u001b[32m'curly'\u001b[39m, \u001b[32m'flatcoated'\u001b[39m, \u001b[32m'golden'\u001b[39m ],\n    ridgeback: [ \u001b[32m'rhodesian'\u001b[39m ],\n    rottweiler: [],\n    saluki: [],\n    samoyed: [],\n    schipperke: [],\n    schnauzer: [ \u001b[32m'giant'\u001b[39m, \u001b[32m'miniature'\u001b[39m ],\n    segugio: [ \u001b[32m'italian'\u001b[39m ],\n    setter: [ \u001b[32m'english'\u001b[39m, \u001b[32m'gordon'\u001b[39m, \u001b[32m'irish'\u001b[39m ],\n    sharpei: [],\n    sheepdog: [ \u001b[32m'english'\u001b[39m, \u001b[32m'indian'\u001b[39m, \u001b[32m'shetland'\u001b[39m ],\n    shiba: [],\n    shihtzu: [],\n    spaniel: [\n      \u001b[32m'blenheim'\u001b[39m,\n      \u001b[32m'brittany'\u001b[39m,\n      \u001b[32m'cocker'\u001b[39m,\n      \u001b[32m'irish'\u001b[39m,\n      \u001b[32m'japanese'\u001b[39m,\n      \u001b[32m'sussex'\u001b[39m,\n      \u001b[32m'welsh'\u001b[39m\n    ],\n    spitz: [ \u001b[32m'indian'\u001b[39m, \u001b[32m'japanese'\u001b[39m ],\n    springer: [ \u001b[32m'english'\u001b[39m ],\n    stbernard: [],\n    terrier: [\n      \u001b[32m'american'\u001b[39m,     \u001b[32m'australian'\u001b[39m,\n      \u001b[32m'bedlington'\u001b[39m,   \u001b[32m'border'\u001b[39m,\n      \u001b[32m'cairn'\u001b[39m,        \u001b[32m'dandie'\u001b[39m,\n      \u001b[32m'fox'\u001b[39m,          \u001b[32m'irish'\u001b[39m,\n      \u001b[32m'kerryblue'\u001b[39m,    \u001b[32m'lakeland'\u001b[39m,\n      \u001b[32m'norfolk'\u001b[39m,      \u001b[32m'norwich'\u001b[39m,\n      \u001b[32m'patterdale'\u001b[39m,   \u001b[32m'russell'\u001b[39m,\n      \u001b[32m'scottish'\u001b[39m,     \u001b[32m'sealyham'\u001b[39m,\n      \u001b[32m'silky'\u001b[39m,        \u001b[32m'tibetan'\u001b[39m,\n      \u001b[32m'toy'\u001b[39m,          \u001b[32m'welsh'\u001b[39m,\n      \u001b[32m'westhighland'\u001b[39m, \u001b[32m'wheaten'\u001b[39m,\n      \u001b[32m'yorkshire'\u001b[39m\n    ],\n    tervuren: [],\n    vizsla: [],\n    waterdog: [ \u001b[32m'spanish'\u001b[39m ],\n    weimaraner: [],\n    whippet: [],\n    wolfhound: [ \u001b[32m'irish'\u001b[39m ]\n  },\n  status: \u001b[32m'success'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "Loading JSON file: C:\\Users\\vipin\\Downloads\\datavip\\projects\\highproject\\test-data\\expected\\userExpected.json\n"
+                    },
+                    {
+                      "text": "Comparison completed successfully.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-02-16T07:58:36.164Z",
+                  "startTime": "2025-05-01T11:16:04.393Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "3f5a1a121163ef28f9fd-980477b4316c1e993b1d",
-          "file": "interview/table.spec.js",
-          "line": 30,
-          "column": 5
+          "id": "3c561355b07f973ea3a7-4d3ff816dfb279050a0c",
+          "file": "apiautomation/apitest.spec.js",
+          "line": 5,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-02-16T07:58:35.114Z",
-    "duration": 2576.594,
+    "startTime": "2025-05-01T11:16:02.989Z",
+    "duration": 3267.396,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
