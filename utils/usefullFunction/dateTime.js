@@ -17,3 +17,13 @@ function getCustomFormattedDate() {
 }
 
 console.log(getCustomFormattedDate());
+
+
+function isTenChars(str) {
+    if (str.length === 10) {
+      return str;
+    } else {
+      console.log("str is more than 10 or less than 10 characters");
+      return str;
+    }
+  }
