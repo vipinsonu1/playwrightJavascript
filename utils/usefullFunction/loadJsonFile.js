@@ -16,3 +16,19 @@ export async function saveActualResponse(relativeFilePath, data) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(actualPath, JSON.stringify(data, null, 2), 'utf8');
 }
+
+
+// skip key value in json file
+// function buildRequestJson(testDataRow) {
+function buildRequestJson(testDataRow) {
+  const requestJson = {};
+
+  for (const key in testDataRow) {
+    if (key !== "TestCaseName" && testDataRow[key] !== 'NA') {
+      requestJson[key] = testDataRow[key];
+    }
+  }
+
+  return requestJson;
+}
+
