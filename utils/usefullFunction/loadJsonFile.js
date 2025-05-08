@@ -32,3 +32,16 @@ function buildRequestJson(testDataRow) {
   return requestJson;
 }
 
+
+// function for pass the multiple values in the json file
+function splitToKeyValueArray(csvString, key) {
+  if (!csvString || typeof csvString !== 'string') return [];
+
+  return csvString
+    .split(',')
+    .map(item => item.trim())
+    .filter(item => item.length > 0)
+    .map(value => ({ [key]: value }));
+}
+
+module.exports = { splitToKeyValueArray };
