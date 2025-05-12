@@ -27,3 +27,16 @@ function isTenChars(str) {
       return str;
     }
   }
+
+
+  function isEntityValueNineOrEighteenChars(str) {
+    const isValidLength = str.length === 9 || str.length === 18;
+    const isAlphanumeric = /^[a-zA-Z0-9]+$/.test(str);
+  
+    if (isValidLength && isAlphanumeric) {
+      return str;
+    } else {
+      console.log("❌ Invalid value: must be alphanumeric and 9 or 18 characters long.");
+      return null;
+    }
+  }
