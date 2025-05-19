@@ -1,17 +1,28 @@
-async function removeNAFields(obj) {
+function removeNAFields(obj) {
     if (Array.isArray(obj)) {
       return obj
         .map(removeNAFields)
-        .filter(item => item !== undefined);
+        .filter(item => item !== undefined && Object.keys(item || {}).length > 0);
     }
   
     if (typeof obj === 'object' && obj !== null) {
       const newObj = {};
       for (const key in obj) {
         const value = obj[key];
-        if (value !== 'NA') {
+  
+        // Check for values to skip
+        const isInvalid =
+          value === 'NA' ||
+          value === null ||
+          value === '' ||
+          (typeof value === 'string' && value.trim().toUpperCase() === 'NA');
+  
+        if (!isInvalid) {
           const cleanedValue = removeNAFields(value);
-          if (cleanedValue !== undefined) {
+          if (
+            cleanedValue !== undefined &&
+            !(typeof cleanedValue === 'object' && Object.keys(cleanedValue).length === 0)
+          ) {
             newObj[key] = cleanedValue;
           }
         }
@@ -23,3 +34,4 @@ async function removeNAFields(obj) {
   }
   
   module.exports = { removeNAFields };
+  
